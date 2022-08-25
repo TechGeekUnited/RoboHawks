@@ -1,146 +1,81 @@
-<!DOCTYPE html>
-<html>
-  <title>Home</title>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-/* Create a column layout with Flexbox */
-.row {
-  display: flex;
-}
-
-/* Left column (menu) */
-.left {
-  flex: 35%;
-  padding: 15px 0;
-}
-
-.left h2 {
-  padding-left: 8px;
-}
-
-/* Right column (page content) */
-.right {
-  flex: 65%;
-  padding: 15px;
-}
-
-/* Style the search box */
-#mySearch {
-  width: 100%;
-  font-size: 18px;
-  padding: 11px;
-  border: 1px solid #fa8e4c;
-}
-
-/* Style the navigation menu inside the left column */
-#myMenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myMenu li a {
-  padding: 12px;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  color: black;
-  display: block
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-#myMenu li a:hover {
-  background-color: black;
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
 </head>
 <body>
 
-<div class="row">
-  <div class="left" style="background-color:#bbb;">
-    <h2>Menu</h2>
-    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-    <ul id="myMenu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="credits.html">Credits</a></li>
-       <li><a href="count.html">Meeting countdown</a></li>
-            <li><a href="s.html">Schedule</a></li>
-    </ul>
-  </div>
-  
-  <div class="right" style="background-color:black;">
-    <div style="color : #fa8e4c;">
-<h1>   New Navigation menu!</p>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="credits.html">Credits</a>
+            <a href="count.html">Meeting countdown</a>
+            <a href="s.html">Schedule</a>
+
 </div>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  background-color: black;
-  font-family: cursive;
-}
 
-.glow {
-  font-size: 80px;
-  color: #fa8e4c;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fa8e4c, 0 0 20px #fa8e4c, 0 0 30px #fa8e4c, 0 0 40px #fa8e4c, 0 0 50px #fa8e4c, 0 0 60px #fa8e4c, 0 0 70px #fa8e4c;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fa8e4c, 0 0 30px #fa8e4c, 0 0 40px #fa8e4c, 0 0 50px #fa8e4c, 0 0 60px #fa8e4c, 0 0 70px #fa8e4c, 0 0 80px #fa8e4c;
-  }
-}
-</style>
-</head>
-<body>
-
-<h1 class="glow">Robohawks</h1>
-     
-</body>
-<img src="rhj.png" alt="Null" width="400" height="534">
-  <div style="color : #fa8e4c;">
-  <p>First Tech Challenge© By First Robotics© Team</p>
-  </div>
-
-
-</body>
-<footer>
-    <div style="color : #fa8e4c;">
-  <p>Copyright 2022 RoboHawks© | Made With Html5<p>
-  </div>
-  </footer>
-  </div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 </div>
 
 <script>
-function myFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myMenu");
-  li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-
+   
 </body>
-</html>
+<div class="right" style="background-color:black;"> <div style="color : #fa8e4c;"> <h1>   New Navigation menu!</p> </div> <head> <meta name="viewport" content="width=device-width, initial-scale=1"> <style> body { background-color: black; font-family: cursive; } .glow { font-size: 80px; color: #fa8e4c; text-align: center; animation: glow 1s ease-in-out infinite alternate; } @-webkit-keyframes glow { from { text-shadow: 0 0 10px #fa8e4c, 0 0 20px #fa8e4c, 0 0 30px #fa8e4c, 0 0 40px #fa8e4c, 0 0 50px #fa8e4c, 0 0 60px #fa8e4c, 0 0 70px #fa8e4c; } to { text-shadow: 0 0 20px #fa8e4c, 0 0 30px #fa8e4c, 0 0 40px #fa8e4c, 0 0 50px #fa8e4c, 0 0 60px #fa8e4c, 0 0 70px #fa8e4c, 0 0 80px #fa8e4c; } } </style> </head> <body> <h1 class="glow">Robohawks</h1> </body> <img src="rhj.png" alt="Null" width="400" height="534"> <div style="color : #fa8e4c;"> <p>First Tech Challenge© By First Robotics© Team</p> </div> </body> <footer> <div style="color : #fa8e4c;"> <p>Copyright 2022 RoboHawks© | Made With Html5<p> </div> </footer> </div> </div>
