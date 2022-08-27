@@ -1,13 +1,30 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>RoboHawks</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <form action="https://robohawks-site.github.io/home.html" method="POST">
+    <form action="https://robohawks-site.github.io/re.html" method="POST">
       <div class="g-recaptcha" data-sitekey="6LeeWK4hAAAAANG8Fj0q7wSSDaca1BbmScoNSQdG"></div>
       <br/>
       <input type="submit" value="Submit">
     </form>
   </body>
+<body>
+
+<div id="result"></div>
+
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("data-callback");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+
+</body>
 </html>
+
