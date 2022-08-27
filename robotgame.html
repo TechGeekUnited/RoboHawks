@@ -1,0 +1,193 @@
+
+<!doctype html>
+<html class="no-js">
+    <head>
+	    <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <link rel="stylesheet" type="text/css" href="css/bfg.css">
+		<link rel="canonical" href="https://battleforthegalaxy.com/play/">
+        <title>Battle for the Galaxy</title>
+        <meta name="description" content="Deep Space, powerful armies and the most technically advanced bases you haven't even dreamt of. Battle for the Galaxy is waiting for you!" />
+		<meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@amtgames" />
+        <meta name="twitter:creator" content="@amtgames" />
+		<meta name="twitter:title" content="Battle for the Galaxy" />
+        <meta name="twitter:description" content="Deep Space, powerful armies and the most technically advanced bases you haven't even dreamt of. Battle for the Galaxy is waiting for you!" />
+        <meta name="twitter:image" content="https://scontent-fra3-1.xx.fbcdn.net/t31.0-8/14589767_659540960890429_6283314728580188118_o.jpg" />
+		<meta property="og:title" content="Battle for the Galaxy" />
+        <meta property="og:type" content="Product" />
+        <meta property="og:url" content="https://battleforthegalaxy.com/play/" />
+        <meta property="og:image" content="https://scontent-fra3-1.xx.fbcdn.net/t31.0-8/14589767_659540960890429_6283314728580188118_o.jpg" />
+		<meta property="og:description" content="Deep Space, powerful armies and the most technically advanced bases you haven't even dreamt of. Battle for the Galaxy is waiting for you!" />
+		<!-- HEAD CODE PLACEHOLDER 1 -->
+    </head>
+    <body>
+		<!-- MINI GAME PLACEHOLDER -->
+
+		<script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js">
+		</script>
+		<script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.9.0/firebase-messaging.js">
+		</script>
+
+		<script>
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.9&appId=255940004595799";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+        <!-- Schema.org metadata VideoGame Info -->
+<script type="application/ld+json">
+{
+"@context" : "https://schema.org",
+"@type" : "VideoGame",
+"name" : "Battle for the Galaxy",
+"url" : "https://battleforthegalaxy.com",
+"playMode" : [ "SinglePlayer", "MultiPlayer"],
+"author" :
+{ "name" : "AMT Games", "url" : "https://amt-games.com" }
+,
+"publisher" : "AMT Games",
+"genre" : "Massively Multiplayer Online Strategy Game",
+"gamePlatform" : [ "Android", "iOS", "Web Browser", "Amazon" ],
+"operatingSystem" : [ "Android", "iOS", "macOS", "Windows", "Amazon" ],
+"applicationCategory" : "Game",
+"description" : "Deep Space, powerful armies and the most technically advanced bases you haven't even dreamt of. Battle for the Galaxy is waiting for you!",
+"offers" :
+{ "@type" : "Offer", "price" : "0", "priceCurrency" : [ "USD", "EUR", "PLN", "TMT" ] }
+}
+</script>
+
+<!-- CODE PLACEHOLDER 1 -->
+
+
+		<div id="bgbuttonstop"></div>
+		<div id="safarifix"><div id="effect3d"></div></div>
+		<div class="supportform" id="supportform">
+		    <form class="forminside" method="POST" action="https://formspree.io/bftg@amt-games.com" target="_blank">
+				<input class="inputter" type="email" name="_replyto" id="emailplace" placeholder="Reply email" required><div class="closexx" id="close3" onclick="hideSupportForm();"></div>
+				<textarea class="messageplace" name="message" id="messageplace" placeholder="Your message" required></textarea>
+				<input class="inputter2" type="name" name="APP version" id="appvplace" style="display: none;" readOnly="true" value="">
+				<input class="inputter2" type="name" name="player ID" id="idplace" style="display: none;" readOnly="true" value="">
+
+				<select id="theme" required onchange="showPlayerInfo();">
+					<option value="" hidden disabled selected></option>
+					<option value="Other">PlaceholderThemeOther</option>
+					<option value="Lost account">PlaceholderThemeLostAccount</option>
+					<option value="Didn't receive purchase">PlaceholderThemeDidntReceivePurchase</option>
+					<option value="Bug">PlaceholderThemeBug</option>
+				</select>
+
+				<input class="inputter2" type="name" name="name" id="playerplace" placeholder="PlaceholderPlayerName" value="" required>
+				<input class="inputter2" type="name" name="level" id="levelplace" placeholder="PlaceholderPlayerLevel" value="" required>
+				<input class="inputter2" type="name" name="country" id="counryplace" placeholder="PlaceholderPlayerCounry" value="" required>
+				<input class="inputter2" type="name" name="corporation" id="corpplace" placeholder="PlaceholderCorpName" value="">
+				<input type="hidden" name="_subject" id="addinfo" value="">
+				<button class="buttonform" type="submit" id="sendbutton" onclick="GetSysInfo()">Send</button>
+            </form>
+        </div>	
+		<div id="buttonscontainer">
+			<!--login-->
+			<!-- LOGIN PLACEHOLDER BAR -->
+			<!--login-->
+
+			<!--like-->
+			<div class='bkg' id='noshow1' onclick='onLikeEnter();'><div class='bkg2'></div><div class='xtest' id='x2'><div class='xtest2'></div></div></div><div class='likebtn' id='likebtn'><iframe id='fblike' src='https://www.facebook.com/plugins/like.php?href=https://facebook.com/bftg.online&width=30px&layout=button_count&action=like&size=small&show_faces=false&share=false&height=21&appId=255940004595799' width='30px' height='21' style='border:none;overflow:hidden' scrolling='no' frameborder='0' allowTransparency='true'></iframe><div class='closexx' id='close4' onclick='hideLikeBtn();'></div></div>
+			<!--like-->
+
+			<!--share-->
+			<div class='bkg' id='noshow' onclick='onInviteClick();'><div class='bkg2'></div><div class='xtest' id='x3'><div class='xtest2'></div></div></div><div class='sharebuttons' id='sharebuttons'><div id='share' data-url='' data-background-alpha='0.0' data-buttons-color='#0373a2' data-counter-background-color='#ffffff' data-share-counter-size='12' data-top-button='false' data-share-counter-type='disable' data-share-style='0' data-mode='share' data-like-text-enable='false' data-mobile-view='false' data-icon-color='#041c33' data-orientation='horizontal' data-text-color='#000000' data-share-shape='round-rectangle' data-sn-ids='fb.vk.tw.' data-share-size='20' data-background-color='#ffffff' data-preview-mobile='false' data-mobile-sn-ids='fb.vk.tw.wh.ok.vb.' data-pid='1586676' data-counter-background-alpha='1.0' data-following-enable='false' data-exclude-show-more='true' data-selection-enable='false' class='uptolike-buttons' ></div> <div class='closexx' id='close2' onclick='hideInviteBar();'></div><script>function inIframe(){ try{ return window.self !== window.top; }catch (e){ return true; } } if(inIframe()){ var element = document.getElementById('share'); element.setAttribute('data-url', document.referrer); } (function(w,doc) { if (!w.__utlWdgt ) { w.__utlWdgt = true; var d = doc, s = d.createElement('script'), g = 'getElementsByTagName'; s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;s.src = ('https:' == w.location.protocol ? 'https' : 'http') + '://w.uptolike.com/widgets/v1/uptolike.js';var h=d[g]('body')[0];h.appendChild(s);}})(window,document);</script></div>
+			<!--share-->
+			
+			<!--community/support-->
+			<div class='bkg' id='community' onclick='onCommunityClick();'><div class='bkg2'></div><div class='xtest' id='x4'><div class='xtest2'></div></div></div><div class='bkg' id='support' onclick='onSupportClick();'><div class='bkg2'></div><div class='xtest' id='x5'><div class='xtest2'></div></div></div>
+			<!--community/support-->
+			
+			<!--fullscreen-->
+			<div class='bkg' id='fullscreen' onclick='onFullscreenClick();'><div class='bkg2'></div><div class='xtest' id='x6'><div class='xtest2'></div></div></div>
+			<!--fullscreen-->
+		</div>
+		<div id="contentdiv" class="BFG_contentdiv">
+			<script type="text/javascript">
+				document.getElementById('contentdiv').style.backgroundImage = (window.innerWidth < 1500 ? 'url(images/bckg_small.jpg)' : 'url(images/bckg.jpg)');
+			</script>
+			<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" style="visibility:hidden" onclick='ccall("forceProcessEvents", null, [], []);'></canvas>
+            <div id="loading_logo" class="BFG_logo"></div>
+			<!-- MAILRU PLACEHOLDER 1 -->
+			<div id="input_holder"></div>
+			
+			<!-- loading page -->
+			<div id="elem_loading_hint">
+				<p id="elem_loading_hint_text">Tip</p>
+			</div>
+			<div id="elem_loading_bar_bg"><div id="elem_loading_bar"></div></div>
+			<div id="elem_loading">
+				<p id="loading_text">LOADING</p>
+			</div>
+			<div class="BFG_footer"></div>
+			<!-- LOGO PLACEHOLDER -->
+		</div>
+		
+		<!-- MAILRU PLACEHOLDER 2 -->
+
+		<!-- fullscreen button -->
+		<script type='text/javascript' src='js/bfg_fullscreen.js'></script>
+		
+		<!-- process top bar -->
+		<script type='text/javascript' src="js/bfg_bar.js">
+		///JS_SCRIPT2///
+		</script>
+		
+		<script type="text/javascript" src="js/bfg_module.js" >
+		///JS_SCRIPT3///
+		</script>
+		
+		<script>
+			localizePage();
+		</script>
+
+		<!-- CODE PLACEHOLDER 2 -->
+		<!-- CODE PLACEHOLDER 3 -->
+
+		<script>
+			moduleStart();
+		</script>
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter40202299 = new Ya.Metrika({
+							id:40202299,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true,
+							webvisor:true,
+							trackHash:true
+						});
+					} catch(e) { }
+				});
+
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/40202299" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+
+	</body>
+</html>
+<script defer src="https://static.itch.io/htmlgame.js" type="text/javascript"></script>
