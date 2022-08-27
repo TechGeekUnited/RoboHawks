@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <style>
 body, html {
@@ -13,7 +12,23 @@ body, html {
 .topleft {
   position: absolute;
   top: 0;
-  right: 16px;
+  left: 16px;
+}
+    
+
+.mid {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  .midd {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .middle {
@@ -40,15 +55,78 @@ hr {
 </div>
 <head>
 </div>
-  <title>Schedule</title>
+</div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="mid">
+  <style>
+body {
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fa8e4c;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+  }
+  
+  to {
+    text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black, 0 0 80px black;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 class="glow">RoboHawks</h1>
+     
+</body>
+<title>RoboHawks</Title>
   <style>
 body {
   background-image: url('orange.png');
 }
 </style>
-<div class="right" style="background-color:#fa8e4c;">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+  </div>
+<body>
+
+<div class="bgimg">
+  <div class="topright">
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -60,7 +138,7 @@ body {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 16;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
@@ -103,7 +181,7 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
+  <a href="home.html">Home</a>
   <a href="credits.html">Credits</a>
   <a href="s.html">Schedule</a>
   <a href="count.html">Count</a>
@@ -117,19 +195,28 @@ body {
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.marginleft = "250px";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("main").style.marginleft= "0";
 }
 </script>
    
 </body>
 </div>
-<div class="right" style="background-color:black;">
-   <div Style="color:#fa8e4c"
+  </div>
+  <div class="topleft">
+  </div>
+</div>
+<head>
+</div>
+   
+</body>
+</div>
+<div class="midd" style="background-color:black;">
+   <div Style="color:black"
    <h1>RoboHawks Schedule</h1>
   <p>Click to Download</p>
   <a href="s.PNG" download>
@@ -138,5 +225,4 @@ function closeNav() {
   <iframe src="https://calendar.google.com/calendar/embed?src=c_classroomf398e8d9%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 </div>
-
-</html> 
+</html>
