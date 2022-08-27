@@ -1,13 +1,132 @@
-<!DOCTYPE html>
 <html>
-    <div class="topleft">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+    
+
+.mid {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  .midd {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
 <a href="logo.png" download> <img src="logo.png" alt="logo" width="100" height="100"></a> 
+  </div>
+  <div class="middle">
+  </div>
+</div>
 <head>
 </div>
-  <title>Map</Title>
-<div class="right" style="background-color:#fa8e4c;">
+</div>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="mid">
+  <style>
+body {
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fa8e4c;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+  }
+  
+  to {
+    text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black, 0 0 80px black;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 class="glow">RoboHawks</h1>
+     
+</body>
+<title>RoboHawks</Title>
+  <style>
+body {
+  background-image: url('orange.png');
+}
+</style>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+  </div>
+<body>
+
+<div class="bgimg">
+  <div class="topright">
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -19,7 +138,7 @@ body {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 16;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
@@ -66,7 +185,7 @@ body {
   <a href="credits.html">Credits</a>
   <a href="s.html">Schedule</a>
   <a href="count.html">Count</a>
-    <a href="map.html">Map</a>
+      <a href="map.html">Map</a>
 </div>
 
 <div id="main">
@@ -76,18 +195,27 @@ body {
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.marginleft = "250px";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("main").style.marginleft= "0";
 }
 </script>
    
 </body>
 </div>
-<div class="right" style="background-color:black;">
+  </div>
+  <div class="topleft">
+  </div>
+</div>
+<head>
+</div>
+   
+</body>
+</div>
+<div class="midd" style="background-color:black;">
   <div class="right" style="color:#fa8e4c;">
 <h1>Directions To Get to Door At Back OF Middle School</h1>
   </div>
@@ -99,10 +227,5 @@ function closeNav() {
   <a href="front.png" download>
   <img src="front.png" alt="Map From Front." width="960" height="540">
 </a>
-    <style>
-body {
-  background-image: url('orange.png');
-}
-</style>
-
-</html> 
+</div>
+</html>
