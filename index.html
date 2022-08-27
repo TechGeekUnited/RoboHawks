@@ -77,9 +77,39 @@ body {
   background-image: url('orange.png');
 }
 </style>
-<div class="right" style="background-color:#fa8e4c;">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  right: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -91,7 +121,7 @@ body {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 16;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
@@ -141,21 +171,30 @@ body {
       <a href="map.html">Map</a>
 </div>
 
-<div class="top-right" id="main">
+<div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 </div>
 
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.marginleft = "250px";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("main").style.marginleft= "0";
 }
 </script>
+   
+</body>
+</div>
+  </div>
+  <div class="topleft">
+  </div>
+</div>
+<head>
+</div>
    
 </body>
 </div>
