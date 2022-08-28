@@ -257,6 +257,11 @@ return i;
 <body onload="startTime()">
 <div id="txt"></div>
 </body>
- <script async src="date.js"></script>
-
+ <script>let currentDate = new Date();
+let cDay = currentDate.getDate()
+let cMonth = currentDate.getMonth() + 1
+let cYear = currentDate.getFullYear()
+console.log(cDay);
+console.log(cMonth);
+console.log(cYear);</script>
  </div>
