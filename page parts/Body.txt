@@ -1,0 +1,15 @@
+<!-- body Foramting Starts -->
+<Style>
+  .midd {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+<div class="midd" style="background-color:black;">
+<!-- Body Starts Here -->
+<!-- Body Ends Here -->
+</div>
+<!-- body Foramting Ends -->
