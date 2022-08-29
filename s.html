@@ -206,3 +206,65 @@ function closeNav() {
 <!-- Body Ends Here -->
 </div>
 <!-- body Foramting Ends -->
+   <!-- Info -->
+ <style>
+   .tech {
+  position: absolute;
+  top: 9999px;
+  left: 50%;
+ </style>
+  <div class="tech">
+    <p>© RoboHawks 2022-2023
+ <h1>Technical Info</h1>
+ <body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = 
+"You Are Accessing This Site From " + window.location.href;
+</script>
+</body>
+ <body>
+<p id="demo1"></p>
+
+<script>
+var w = window.innerWidth;
+var h = window.innerHeight;
+
+var x = document.getElementById("demo1");
+x.innerHTML = " Width: " + w + ", Height: " + h + ".";
+</script>
+
+</body>
+<head>
+ <p>Current Time</p>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>
+</head>
+   <p>Loaded Timestamp</p>
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+   <div id="current_date"></p>
+<script>
+document.getElementById("current_date").innerHTML = Date();
+</script>
