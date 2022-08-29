@@ -258,10 +258,8 @@ return i;
 <body onload="startTime()">
 <div id="txt"></div>
 </body>
-   <body>
-      <form>
-      <input type="button" value="Result" onclick="display()"/>
-      </form>
-      <script src="date.js">
-      </script>
-   </body>
+   <div id="current_date"></p>
+<script>
+document.getElementById("current_date").innerHTML = Date();
+</script>
+   
