@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+        <title>Jetpack Joyride</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+
+        <script>
+            // Package-ID
+            window.famobi_gameID = "jetpack-joyride";
+            window.famobi_gameJS = [
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/engine/phaser-3.24.1.min.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Preload.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Main.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Button.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/Weapon.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/Coin.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/Laser.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/Missile.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/LabWorker.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/Zapper.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/Player.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/Alert.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/VehicleBar.js",
+               "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/BoostRing.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Entity/PiggyBank.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Vehicle/Vehicle.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Vehicle/Mech.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Vehicle/Hog.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Vehicle/ProfitBird.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Vehicle/GravitySuit.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Jetpack/DefaultJetpack.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Jetpack/JetpackEffect.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Level/BackgroundController.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Level/Background.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Level/BackgroundObjectAsImage.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Level/BackgroundObjectAsMatterImage.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Level/BackgroundObjectAsSprite.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Level/LevelDataManager.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Level/DataManager.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Level/ParticleSystem.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Screen/PrePreload.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Screen/Gameplay.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Screen/Resultscreen.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Screen/Transitionscreen.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Screen/Splash.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Screen/Setting.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Screen/Language.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Screen/Credit.js",
+                "https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/source/Random/Random.js",
+                function(){
+                    if(!window.calledReadyForLoad) window.onReadyForLoad();
+                }
+            ];
+
+            (function (document, url, fgJS, firstJS) {
+                    fgJS = document.createElement('script');
+                    firstJS = document.getElementsByTagName('script')[0];
+                    fgJS.src = url + encodeURIComponent(document.location.href);
+                    firstJS.parentNode.insertBefore(fgJS, firstJS);
+            })(document, 'https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030//html5games/gameapi/v1.js?e=');
+        </script>
+
+    </head>
+
+     <body>
+        <div class="fontLoader" style="font-family: jetpackia;">-</div>
+        <img id="rotate_image" src="https://games.cdn.famobi.com/html5games/j/jetpack-joyride/v030/img/HB_ic_rotateScreen.png" alt="rotate_screen" class="center">
+        <div id="content">
+            <div id="phaser-canvas"></div>
+        </div>
+    </body>
+</html>  
